@@ -39,7 +39,7 @@ This project is a frontend implementation of an Online Voting System built using
    ```bash
    npm start
    ```
-   Visit [http://localhost:3000](http://localhost:5173) in your browser to view the app.
+   Visit (http://localhost:5173) in your browser to view the app.
 
 ### Folder Structure
 
