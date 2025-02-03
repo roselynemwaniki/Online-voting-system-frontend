@@ -39,7 +39,7 @@ This project is a frontend implementation of an Online Voting System built using
    ```bash
    npm start
    ```
-   Visit [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+   Visit [http://localhost:3000](http://localhost:5173) in your browser to view the app.
 
 ### Folder Structure
 
@@ -62,12 +62,6 @@ Once the app is running:
 - **Vote**: Go to the voting page and select a candidate to cast your vote.
 - **Results**: View real-time voting results on the results page.
 
-### Testing
-
-To run tests, make sure you have all dependencies installed and then run:
-```bash
-npm test
-```
 
 ### Contributing
 
