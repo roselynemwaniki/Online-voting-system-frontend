@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -21,7 +20,6 @@ function Login() {
       const data = await response.json();
       if (response.ok) {
         toast.success("Login successful! Redirecting...");
-        // You can replace this with redirection logic or navigation using `useNavigate`.
       } else {
         setError(data.message || "Login failed");
         toast.error(data.message || "Login failed");
@@ -33,16 +31,15 @@ function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50">
-      <form onSubmit={handleLogin} className="bg-white p-8 rounded shadow-md w-96">
-        <h2 className="text-2xl font-bold mb-6 text-center">Welcome Back</h2>
+    <div>
+      <form onSubmit={handleLogin}>
+        <h2>Welcome Back</h2>
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="border p-3 rounded w-full mb-4"
         />
         <input
           type="password"
@@ -50,15 +47,9 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="border p-3 rounded w-full mb-4"
         />
-        <button
-          type="submit"
-          className="bg-blue-600 text-white p-3 rounded w-full hover:bg-blue-700 transition duration-200"
-        >
-          Login
-        </button>
-        </form>
+        <button type="submit">Login</button>
+      </form>
       <ToastContainer />
     </div>
   );

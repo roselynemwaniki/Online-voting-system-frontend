@@ -12,6 +12,7 @@ function App() {
         <h1>Voting System</h1>
         <ul>
           <li><Link to="/">Home</Link></li>
+          <li><Link to="/candidateform">CandidateForm</Link></li>
           <li><Link to="/login">Login</Link></li>
           <li><Link to="/vote">Vote</Link></li>
           <li><Link to="/results">Results</Link></li>
@@ -19,7 +20,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />        
         <Route path="/login" element={<Login />} />
         <Route path="/vote" element={<Voting />} />
         <Route path="/results" element={<Results />} />
